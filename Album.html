@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <title>Mi Portafolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <meta name="theme-color" content="#712cf9" />
+        <style>
+            .b-example-divider {
+                width: 100%;
+                height: 3rem;
+                background-color: #0000001a;
+                border: solid rgba(0, 0, 0, 0.15);
+                border-width: 1px 0;
+                box-shadow: inset 0 0.5em 1.5em #0000001a, inset 0 0.125em 0.5em #00000026;
+            }
+            .bi {
+                vertical-align: -0.125em;
+                fill: currentColor;
+            }
+            .btn-bd-primary {
+                --bd-violet-bg: #712cf9;
+                --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+                --bs-btn-font-weight: 600;
+                --bs-btn-color: var(--bs-white);
+                --bs-btn-bg: var(--bd-violet-bg);
+                --bs-btn-border-color: var(--bd-violet-bg);
+                --bs-btn-hover-color: var(--bs-white);
+                --bs-btn-hover-bg: #6528e0;
+                --bs-btn-hover-border-color: #6528e0;
+                --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+                --bs-btn-active-color: var(--bs-btn-hover-color);
+                --bs-btn-active-bg: #5a23c8;
+                --bs-btn-active-border-color: #5a23c8;
+            }
+            .card-img-top {
+                height: 225px;
+                object-fit: cover;
+            }
+
+            .card-title {
+                min-height: 2.5rem;
+                display: flex;
+                align-items: center;
+            }
+            .card-text {
+                min-height: 4rem;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="collapse" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4>Sobre mi</h4>
+                            <p class="text-body-secondary">
+                                Diseñadora gráfica con pasión por crear experiencias digitales significativas. 
+                                Cada proyecto es una oportunidad para combinar creatividad, funcionalidad y narrativa visual.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4>Contacto</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.instagram.com/isa_puelma/" class="text-white">Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/in/isabel-puelma/" class="text-white">Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <strong>Isabel Puelma</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">Portafolio</h1>
+                        <p class="lead text-body-secondary">Una colección de mis proyectos de diseño, ilustración y Diseño web. Cada trabajo representa mi pasión por crear experiencias visuales únicas.</p>
+                        <p><a href="#" class="btn btn-primary my-2">Planes</a> <a href="#" class="btn btn-secondary my-2">Trabajemos juntos</a></p>
+                    </div>
+                </div>
+            </section>
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="portafolio">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-body-secondary py-5">
+            <div class="container">
+                <p class="float-end mb-1"><a href="#">De vuelta a arriba</a></p>
+                <p class="mb-1">Portafolio de Isabel Puelma © 2025
+                <p class="mb-0">Visita mi perfil de <a href="/">Instagram </a> o mi perfil de <a href="https://www.linkedin.com/in/isabel-puelma/">Linkedin</a>.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const trabajos = [
+                {
+                    titulo: "CODÚ",
+                    categoria: "Diseño Web",
+                    imagen: "codu.png",
+                    descripcion: "Diseño de página web en Shopify, para Codú marca de T-shirts, que apoya directamente a sus artistas."
+                },
+                {
+                    titulo: "NEWLOOK",
+                    categoria: "Dirección de Arte",
+                    imagen: "newlook.png",
+                    descripcion: "Se creó la colección de moda de 6 prendas de vestir inspirado en la moda y practicidad de los años 60's. Dirección de arte y fotografía."
+                },
+                {
+                    titulo: "F. ALMA CHILE",
+                    categoria: "Branding",
+                    imagen: "alma.png",
+                    descripcion: "Creación de identidad de marca completa para Fundación Alma, refugio de rescate animal para aumentar su alcance."
+                },
+                {
+                    titulo: "Peque",
+                    categoria: "Ilustración",
+                    imagen: "peque.png",
+                    descripcion: "Diseño de fanzine ilustrado que explora las creencias de nuestra niñez."
+                },
+                {
+                    titulo: "PATRÓN HALLOWEEN",
+                    categoria: "Ilustración",
+                    imagen: "hallo.png",
+                    descripcion: "Diseño de patron ilustrado para papel de regalo tématico."
+                },
+                {
+                    titulo: "BRODERIE: E-COMMERCE",
+                    categoria: "Diseño Web",
+                    imagen: "broderie.png",
+                    descripcion: "Diseño de página web en Shopify para Broderie, marca de pijamas primium. Creación de manual de marca completo."
+                },
+                {
+                    titulo: "Maven",
+                    categoria: "Pasion Proyect",
+                    imagen: "maven.png",
+                    descripcion: "Diseño de packaging para Maven, marca de joyería de lujo."
+                },
+                {
+                    titulo: "BEHEALTHY: PACKAGING",
+                    categoria: "Packaging",
+                    imagen: "detox.png",
+                    descripcion: "Sistema de packaging para productos de marca de suplementos y binestar: Behealthy."
+                },
+                {
+                    titulo: "Lamp",
+                    categoria: "Diseño Industrial",
+                    imagen: "lamp.png",
+                    descripcion: "Modelado e impresion 3D de lámpara funcional para el curso CAD/CAM."
+                },
+                
+            ];
+
+            const portafolio = document.querySelector("#portafolio");
+
+            trabajos.forEach((v) => {
+                portafolio.innerHTML += `
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="${v.imagen}" class="card-img-top" alt="${v.titulo}">
+                            <div class="card-body">
+                                <p class="card-text"><span class="fw-bold">${v.titulo}</span> - ${v.descripcion}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">${v.categoria}</button>
+                                    </div>
+                                    <small class="text-body-secondary">Ver proyecto</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        </script>
+    </body>
+</html>
